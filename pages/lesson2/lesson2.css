@@ -1,0 +1,33 @@
+body { background-color:#fec5bb;
+    color: #f8edeb;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+  }
+
+  #gridcontainer {
+    display: grid; 
+    grid-template-columns: 1fr ;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+/* medium screen */
+@media only screen and (min-width:30.5em) { 
+  #gridcontainer { 
+     grid-template-columns: 1fr 1fr ;
+    }
+}
+
+/* large screen */
+@media only screen and (min-width:54.5em) {
+  #gridcontainer { 
+    grid-template-columns: 1fr 1fr 1fr ;
+   }
+}
+
+
+

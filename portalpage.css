@@ -21,19 +21,24 @@ body { background-color:#fec5bb;
 
 
 /* 3. Midsize */
-img {
-  width: 400px;
-  height: 600px;
-  border-radius: 8px;
-  display: block;
-margin-left: auto;
-margin-right: auto;}
+@media only screen and (min-width:30.5em) { 
+  img {
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+  }
 
 /* 4. Large */
-#wrapper {
-  width:90%;
-  margin: 0 auto;
+@media only screen and (min-width:54.5em) {
+  #wrapper {
+    width:90%;
+    margin: 0 auto;
+  }
 }
+
 
 #page-h2 {color:#f8edeb;}
 

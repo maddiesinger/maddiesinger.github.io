@@ -1,0 +1,134 @@
+header {
+  background-color:#219EBC;
+  font-size: 40px;
+  color:white;
+  padding-bottom: 20px;
+}
+
+#wrapper { background-color:#8ECAE6;
+    color: #ffff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+#pagenav {
+    background-color:#023047;
+    color:#FFB703;
+    font-size: 30px;
+	 margin: 0 auto;
+   
+}
+
+#pnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #023047;
+}
+
+#navlist {
+  float: left;
+}
+
+#navlist a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:link {
+    color: #FFB703;
+  }
+
+a:visited {
+    color: #FB8500;
+  }
+
+  h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    color:#023047;
+  }
+
+  h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color:#023047;
+  }
+  table {
+    border-collapse: collapse;
+  }
+
+  #sample1 {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #219EBC;
+    color:white;
+    font-size: 40px;
+  }
+
+  #sample2 {
+    font-family: 'Source Code Pro', monospace;
+    background-color:#023047;
+    color:#FFB703;
+    font-size: 30px;
+  }
+  #sample3{
+    font-family: 'Source Code Pro', monospace;
+    color: #FB8500;
+    font-size:20px;
+  }
+  #sample4{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    color:#023047;
+  }
+  #sample5{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color:#023047;
+  }
+  #sample6{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    color:#023047;
+  }
+  #sample7{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px
+  }
+
+
+
+  #footnav {
+    color:#023047;
+    font-size:20px;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+
+
+
+
+  /*midsize*/
+@media only screen and (min-width:30.5em) { 
+    #mainlogo {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      display: block;
+      margin-right: auto;
+    }}
+@media only screen and (min-width:30.5em) { 
+        #exlogo {
+          width: 300px;
+          height: 300px;
+          border-radius: 8px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;}
+        }
