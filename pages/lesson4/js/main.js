@@ -8,3 +8,38 @@ function myFunction() {
     }
   }
 
+  function copyrightYear() {
+    var todaysDate = new Date();
+    var currentYear = todays.Date.getFullYear();
+    document.getElementById("copyright-year").innerHTML = "&copy;" + currentYear; 
+  }
+
+  function currentDate() {
+    var todaysDate = new Date();
+    const longDayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var dayName = longDayNames[todaysDate.getDay()];
+    const longMonthNames = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var monthName = longMonthNames[todaysDate.getMonth()];
+    document.getElementById("current-date").innerHTML = dayName + " " + todaysDate.getDate() + " " + monthName + " " +todaysDate.getFullYear();
+
+  }
+
+function lastSave() {
+  const isoString = new Date(document.lastModified).toISOString();
+  const options = {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  };
+  console.log(isoString);
+  const date = new Date(isoString);
+  const upDate = new Intl.DateTimeFormat("en-UK", options).format(date);
+  const lastMod = document.getElementById("lupdate");
+  lastMod.innerText = `Last Updated: ${upDate}`;
+}
+
+window.onload = currentDate();
+window.onload = copyrightYear();
+window.onload = lastSave();
+
+
