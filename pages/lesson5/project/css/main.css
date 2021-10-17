@@ -1,0 +1,176 @@
+
+header{
+    background-color: #219EBC;
+    color: #023047;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#tagline{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 35px;
+}
+
+
+#mainlogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    display: inline;
+    margin-right: auto;
+}
+
+.friday {
+  display: none;
+  background-color: #FFA033;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+
+.pancake {
+  display: block;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #FFA033;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    font-family: 'Source Code Pro', monospace;
+    color:#023047;
+  }
+  
+
+  .topnav a {
+    color: White;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+  }
+  
+ 
+  .topnav a.icon {
+    background: #023047;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #FFA033;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+ 
+  .active {
+    background-color: #023047;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+ul{
+  list-style-type: none;
+}
+
+
+.sectionhead{
+    font-size: 25px;
+}
+
+.location {
+    background-color:#FFDC85;
+    color:#023047;
+    font-size:30px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: auto;
+
+
+}
+
+.currentcondition {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.fivedayforecast {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    display: none;
+  
+}
+.article {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.contactinfo {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#bottomfooter{
+  background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .fivedayforecast{
+    display:block;
+  }
+
+.topnav {
+  background-color: #023047;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFA033;
+  color: #023047;
+}
+
+.topnav a.active {
+  color: #FFA033;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+}
+
+
+
+  
+
+
+
