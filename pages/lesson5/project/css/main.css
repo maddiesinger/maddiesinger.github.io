@@ -1,10 +1,11 @@
 
-header{
+.header{
     background-color: #219EBC;
     color: #023047;
     text-align: center;
     font-size: 30px;
     font-family: 'Source Code Pro', monospace;
+    display: flex;
 }
 
 #tagline{
@@ -151,6 +152,7 @@ ul{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .topnav a:hover {
@@ -164,6 +166,10 @@ ul{
 
 .topnav .icon {
   display: none;
+}
+
+.topnav a.menu {
+  font-family: 'Source Code Pro', monospace;
 }
 
 }
