@@ -5,7 +5,7 @@
     text-align: center;
     font-size: 30px;
     font-family: 'Source Code Pro', monospace;
-    display: flex;
+      
 }
 
 #tagline{
@@ -18,7 +18,6 @@
     width: 100px;
     height: 100px;
     border-radius: 8px;
-    display: inline;
     margin-right: auto;
 }
 
@@ -97,8 +96,26 @@ ul{
     font-family: 'Source Code Pro', monospace;
     margin: auto;
 
-
 }
+
+.hero {
+    max-width: 100%;
+    height: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herotext {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 
 .currentcondition {
     background-color:#219EBC;

@@ -16,11 +16,31 @@ if (dayOfWeek == 5) {
   banner.className += " pancake";
 }
 
+let imagesToLoad = document.querySelector("img[data-src]");
+
+const imgOptions = {
+  threshold: 0.5,
+  rootmargin: "0px 0px 100px 0px"
+}
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer)=> {
+    items.forEach((item)) => {
+      
+    }
+  };)
+};
 
   function copyrightYear() {
     var todaysDate = new Date();
     var currentYear = todaysDate.getFullYear();
-    document.getElementById("current-date").textContent = "&#169; " + currentYear; 
+    document.getElementById("current-date").innerText = currentYear; 
   };
 
   function currentDate() {
