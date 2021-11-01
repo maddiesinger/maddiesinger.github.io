@@ -101,6 +101,36 @@ ul{
 
 }
 
+#hero {
+  max-width: 100%;
+  height: auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  
+}
+
+.heroimage {
+display: grid;
+/*position: relative;*/
+text-align: center;
+color: white;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.herotextcontainer {
+grid-column: 1/2;
+grid-row:2/2;
+z-index: 2;
+color:White;
+background-color: #023047;
+opacity: 0.6;
+font-family: 'Source Code Pro', monospace;
+}
+
 .currentcondition {
     background-color:#219EBC;
     color:white;

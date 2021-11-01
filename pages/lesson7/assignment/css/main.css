@@ -1,0 +1,262 @@
+/*Preston CSS*/
+.header{
+    background-color: #219EBC;
+    color: #023047;
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto auto ;
+    
+}
+
+#coname{
+grid-column: 2/3;
+grid-row: 2/3;
+}
+
+#tagline{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 35px;
+    grid-column:2/3 ;
+    grid-row:3/4 ;
+}
+
+#mainlogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    grid-column: 1/2 ;
+    grid-row: 2/4;
+}
+
+.friday {
+  display: none;
+  background-color: #FFA033;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+
+.pancake {
+  display: block;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #FFA033;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    font-family: 'Source Code Pro', monospace;
+    color:#023047;
+  }
+  
+
+  .topnav a {
+    color: White;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+  }
+  
+ 
+  .topnav a.icon {
+    background: #023047;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #FFA033;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+ 
+  .active {
+    background-color: #023047;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+ul{
+  list-style-type: none;
+}
+
+
+.sectionhead{
+    font-size: 25px;
+}
+
+.location {
+    background-color:#FFDC85;
+    color:#023047;
+    font-size:30px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin: auto;
+
+
+}
+
+#hero {
+  max-width: 100%;
+  height: auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  
+}
+
+.heroimage {
+display: grid;
+/*position: relative;*/
+text-align: center;
+color: white;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.herotextcontainer {
+grid-column: 1/2;
+grid-row:2/2;
+z-index: 2;
+color:White;
+background-color: #023047;
+opacity: 0.6;
+font-family: 'Source Code Pro', monospace;
+}
+
+.currentcondition {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.fivedayforecast {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    display: none;
+  
+}
+.article {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*Gallery Page CSS*/
+
+#pagetitle {
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.responsive {
+  width: 100%;
+}
+
+
+.contactinfo {
+    background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#bottomfooter{
+  background-color:#219EBC;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+}
+
+/*medium screen*/
+@media only screen and (max-width:700) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+/*large screen*/
+@media only screen and (min-width: 701px) {
+
+  .fivedayforecast{
+    display:block;
+  }
+
+  .topnav {
+  background-color: #023047;
+  overflow: hidden;
+  }
+
+  .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Source Code Pro', monospace;
+  }
+
+  .topnav a:hover {
+  background-color: #FFA033;
+  color: #023047;
+  }
+
+  .topnav a.active {
+  color: #FFA033;
+  }
+
+  .topnav .icon {
+  display: none;
+  }
+
+  .topnav a.menu {
+  font-family: 'Source Code Pro', monospace;
+  }
+
+/*Gallery Page CSS*/
+  .responsive {
+    float:left;
+  padding: 0 6px;
+  width: 24.99999%;
+  }
+
+}
