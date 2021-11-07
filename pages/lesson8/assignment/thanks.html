@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/main.js" async></script>
-    <title>Preston ID|Stormcast</title>
+    <script src="main.js" async></script>
+    <title> Image Gallery|Stormcast</title>
 </head>
 <body>
     <section class="friday">
@@ -22,7 +22,7 @@
     </section>
     <noscript>Javascript must be enabled to enhance the contents of the page </noscript>
     <header class="header">
-        <img id="mainlogo" src="images/stormcastlogo.png" alt="stormcastlogo clouds and rain">
+        <img id="mainlogo" src="/media/images/stormcastlogo.png" alt="stormcastlogo clouds and rain">
         <h1 id="coname"> Stormcast</h1>
         <p id="tagline"> No more rainchecks, with stormcast you can be prepared.</p>
     </header>
@@ -34,7 +34,7 @@
           <a href="preston.html" title="Preston Page" class="active">Preston</a>
           <a href="#" title="Soda Springs Page">Soda Springs</a>
           <a href="#" title="Fish Haven Page">Fish Haven</a>
-          <a href="/pages/lesson8/assignment/stormcenter.html" title="Storm Center Page">Storm Center</a>
+          <a href="stormcenter.html" title="Storm Center Page">Storm Center</a>
           <a href="gallery.html" title="Gallery Page">Gallery</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -43,42 +43,10 @@
       </div>
     </nav>
     <main>
-        <section class="location">
-            <h1> Preston, ID</h1>
-        </section>
-        <section class="heroimage">
-            <picture id="hero">
-                <source srcset="/pages/lesson6/images/myprestonimg1400w.jpg" media="screen and (min-width: 1200px)">
-                <source srcset="images/myprestonimg950w.jpg" media="screen and (min-width: 700px)">
-                <img srcset="images/myprestonimg400w.jpg" media="screen and (max-width: 699px)">
-            </picture>
-            <div class="herotextcontainer">
-            <h1>Weather Summary</h1>
-            <ul>
-                <li id="current-temp">Currently:</li>
-                <li>High:</li>
-                <li id="windchill">WindChill:</li>
-                <li>Humidity:</li>
-                <li>Wind Speed:</li>
-            </ul>
-            </div>
-        </section>
-        <section class="currentcondition">
-            <h2 class="sectionhead">Current Conditions</h2>
-        </section>
-        <section class="fivedayforecast">
-            <h2 class="sectionhead">5-day Forecast</h2>
-            <ul class="hiddenforecast">
-                <li>Monday: </li>
-                <li>Tuesday: </li>
-                <li>Wednesday: </li>
-                <li>Thursday: </li>
-                <li>Friday: </li>
-            </ul>
-        </section>
-        <section class="article">
-            <h2 class="sectionhead">Article</h2>
-        </section>
+        <div id="thankscontainer">
+        <h1 id="thanks">Thank You For Submiting a Storm Report!</h1>
+        <img id="thanksimg" src="/media/images/cloudimg.jfif" alt="clouds during a sunset">
+        </div>
     </main>
     <footer id="bottomfooter">
         <div class="contactinfo">
@@ -87,9 +55,9 @@
                 <li>Email: <a href="#"> Stormcast@email.com </a> </li>
                 <li>Instagram: <a href="#"> @stormcastweather</a> </li>
             </ul>
-        
-            <p id="current-date"> &#169; </p>
-            <p id="lupdate"></p>
+          
+          <p id="current-date">&copy;</p>
+          <p id="lupdate"></p>
         </div>
     </footer>
 </body>
