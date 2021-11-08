@@ -47,7 +47,7 @@
         <p id="scdescription"> Welcome to the Storm Center! Here you can report a storm or unusual weather acitivity in your area.
           <br> Please fill out the form below to submit a report. * indicates required.
         </p>
-        <form method="get" post="thanks.html">
+        <form method="get" action="thanks.html">
           <fieldset>
             <legend>Storm Center</legend>
             <label for="fname">First Name:*</label>
@@ -104,24 +104,24 @@
                 <option value="Soda Springs">Soda Springs</option>
                 <option value="Fish Haven">Fish Haven</option>
               </select>
-
+              
             <label for="danger">Are you in danger?</label>
 
             <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="danger" value="Yes">
+            <input type="radio" id="yes" name="dangeryes" value="Yes">
             
             <label for="no">No</label>
-            <input type="radio" id="no" name="danger" value="No">
+            <input type="radio" id="no" name="dangerno" value="No">
   
-            <label for="Maybe">Maybe</label>
-            <input type="radio" id="maybe" name="danger" value="Maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="dangermaybe" value="Maybe">
+
 
             <label for="message">Please enter any additional comments:</label>
-            <textarea name="message" rows="10" cols="30"></textarea>
+            <textarea name="message" rows="10" cols="30" id="message"></textarea>
 
             <label for="submit">Press Submit if you are finished.</label>
-            <a href="thanks.html">
-            <input type="submit" value="Submit" class="submitBtn"></a>
+            <input type="submit" value="Submit" class="submitBtn" id="submit"></a>
           </fieldset>
           
         </form>
