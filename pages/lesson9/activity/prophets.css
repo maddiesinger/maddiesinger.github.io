@@ -1,0 +1,10 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: beige;
+}
+
+.cards {
+    align-content: center;
+    background-color: beige;
+}
