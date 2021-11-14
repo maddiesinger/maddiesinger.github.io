@@ -158,6 +158,50 @@ font-family: 'Source Code Pro', monospace;
     font-family: 'Source Code Pro', monospace;
 }
 
+/*-------Home Page CSS--------*/
+.cards {
+  background-color:#FFEEC2;
+  font-family: 'Roboto', sans-serif;
+  margin: .5rem auto;
+  max-width: 600px;
+	border:1px solid #FFEEC2;
+}
+
+.cards section {
+  display: block grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards h1 {
+  font-family: 'Source Code Pro', monospace;
+  grid-column: 1;
+	grid-row: 1;
+  text-align: center;
+  color: #023047;
+  font-size: 30px;
+}
+
+.cards h2 {
+  font-family: 'Source Code Pro', monospace;
+  grid-column: 1;
+	grid-row: 1;
+  text-align: center;
+  color:#023047;
+  font-size: 20px;
+} 
+.cards img {
+  width: 100%; 
+  height: auto;
+  padding:0;
+  grid-column:2/3;
+}
+.cards p {
+	grid-column: 1;
+	grid-row: 1;
+  text-align: center;
+  color:#023047;
+}
+
 /*------Gallery Page CSS-------*/
 
 #pagetitle {
@@ -204,6 +248,7 @@ div.desc {
     color:white;
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
+    font-weight: bold;
 }
 
 #bottomfooter a:link {
@@ -264,8 +309,6 @@ form input, form input select, form textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 form input.submitBtn {
   border: none;
   border-radius: 1rem;
@@ -304,7 +347,7 @@ form input.submitBtn {
 }
 
 /*medium screen*/
-@media only screen and (max-width:700px) {
+@media only screen and (min-width:768px) {
 
   /*Gallery Page CSS */
   .main-gallery{
@@ -316,7 +359,7 @@ form input.submitBtn {
 }
 
 /*large screen*/
-@media only screen and (min-width:701px) {
+@media only screen and (min-width:992px) {
 
   .fivedayforecast{
     display:block;
@@ -363,5 +406,15 @@ form input.submitBtn {
 
 /*-----Storm Center CSS------*/
 
+/*-------Home Page CSS--------*/
+ .cards {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .cards section {
+    display: block;
+  }
 
 }

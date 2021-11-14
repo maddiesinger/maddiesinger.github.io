@@ -21,6 +21,8 @@ function adjustRating(rating) {
 }
 
 
+
+
 //Footer script
   function copyrightYear() {
     var todaysDate = new Date();
