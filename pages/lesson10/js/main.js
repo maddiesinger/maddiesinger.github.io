@@ -37,7 +37,7 @@ fetch(prestonAPI)
         document.querySelector('#high-temp').innerHTML = 'High: ' + jsonObject.main.temp_max + '&deg;F';
         document.querySelector('#windchill').innerHTML = 'Feels Like: ' + jsonObject.main.feels_like + '&deg;F';
         document.querySelector('#humidity').innerHTML = 'Humidy: ' + jsonObject.main.humidity + '%';
-        document.querySelector('#wind-speed').innerHTML = 'Wind Speed: ' + jsonObject.main.wind.speed + 'mph';
+        document.querySelector('#wind-speed').innerHTML = 'Wind Speed: ' + jsonObject.main.wind.speed;
 
         //let iconPath = 'https://openweathermap.org/img/w/'+jsonObject.weather[0].icon+'.png';
         //icon = document.querySelector('#img').innerHTML = 'Image Icon Path: ' + iconPath + '<img src="' + iconPath + '"alt="current weather icon">';
