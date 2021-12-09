@@ -17,7 +17,7 @@ font-family: 'Oswald', sans-serif;*/
   .topnav a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -48,11 +48,15 @@ font-family: 'Oswald', sans-serif;*/
 
  footer {
    background-color:#007EA7;
-   color: #F4F6F6;
+   color: White;
    display:grid;
    grid-template-columns: auto auto;
    grid-template-rows: auto;
    justify-content: space-evenly;
+ }
+
+ footer img {
+   max-width: 100px;
  }
 
 
@@ -131,20 +135,20 @@ text-decoration: none;
 
 .card1 img {
     max-width: 300px;
-    max-height: auto;
+    height: auto;
     align-content: center;
     border-radius: 25px;
 }
 
 .card2 img {
   max-width: 300px;
-  max-height: auto;
+  height: auto;
   border-radius: 25px;
 }
 
 .card3 img {
   max-width: 300px;
-  max-height: auto;
+  height: auto;
   border-radius: 25px;
 }
 
@@ -212,12 +216,17 @@ padding-bottom: 5px;
 }
 
 
-.weather {
+.weather-forecast {
   background-color: #CCDBDC;
   color:#003249;
   grid-column: 3;
   padding-left: 5px;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.section-heading {
+  font-family: 'Oswald', sans-serif;
 }
 
 .highlight {
@@ -280,7 +289,7 @@ form input, form input select, form textarea {
   border-radius: 4px;
   padding: .75rem 0 .75rem;
   width: 100%;
-  max-width: 20 rem;
+  max-width: 20rem;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -360,7 +369,7 @@ form input, form input select, form textarea {
   border-radius: 4px;
   padding: .75rem 0 .75rem;
   width: 100%;
-  max-width: 20 rem;
+  max-width: 20rem;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -598,21 +607,21 @@ form input.submitBtn {
   
   .card1 img {
     max-width: 300px;
-    max-height: auto;
+    height: auto;
     align-content: center;
     border-radius: 25px;
   }
 
   .card2 img {
     max-width: 300px;
-    max-height: auto;
+    height: auto;
     border-radius: 25px;
   }
 
   .card3 img {
     padding-top: 10px;
     max-width: 300px;
-    max-height: auto;
+    height: auto;
     border-radius: 25px;
   }
 

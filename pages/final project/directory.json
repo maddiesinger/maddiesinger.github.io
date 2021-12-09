@@ -6,7 +6,8 @@
         "email": "Christie@lashandglow.Com",
         "address": "1530 Keller Parkway, Keller, TX, 76248, United States",
         "website": "https://lashandglow.com/",
-        "imageurl": "https://images.squarespace-cdn.com/content/v1/592b2d9df7e0ab6406c995ba/1540565352666-P6DQLZ6HVQ3QSRKDLO3H/lashandglow_websitelogo.png?format=1500w"
+        "imageurl": "https://images.squarespace-cdn.com/content/v1/592b2d9df7e0ab6406c995ba/1540565352666-P6DQLZ6HVQ3QSRKDLO3H/lashandglow_websitelogo.png?format=1500w",
+        "imagealt": "Lash and Glow Logo"
       },
       {
         "name": "Jose G. Chow DDS Orthodontics",
@@ -14,7 +15,8 @@
         "email": "lildeb@josechowortho.com",
         "address": "8096 Precinct Line Rd, Colleyville, TX 76034",
         "website": "https://www.josechowortho.com/",
-        "imageurl": "https://www.josechowortho.com/assets/images/logo-slideshow.png"
+        "imageurl": "https://www.josechowortho.com/assets/images/logo-slideshow.png",
+        "imagealt": "Jose Chow Logo"
         },
     {
         "name": "Seven Mile Cafe",
@@ -22,7 +24,8 @@
         "email": "INFO@SEVENMILECAFE.COM",
         "address": "110 W. Vine ST, Keller, TX 76034",
         "website": "http://www.sevenmilecafe.com/",
-        "imageurl": "http://images.squarespace-cdn.com/content/v1/537d2422e4b0fd55b0cd6feb/c9fac819-a041-4d3d-aa41-3edf1d47f69b/SMCRoundLogoWhite.png?format=1500w"
+        "imageurl": "http://images.squarespace-cdn.com/content/v1/537d2422e4b0fd55b0cd6feb/c9fac819-a041-4d3d-aa41-3edf1d47f69b/SMCRoundLogoWhite.png?format=1500w",
+        "imagealt": "Seven Mile Cafe Logo"
      },
      {
         "name": "Main Event",
@@ -30,7 +33,8 @@
         "email": null,
         "address": "2601 Presidio Vista Dr, Fort Worth, TX 76177",
         "website": "https://www.mainevent.com/",
-        "imageurl": "https://images.ctfassets.net/3dar4x4x74wk/cZZNUCdSENJnx4PZ6FLZs/7d534bbd01fc55c6392bc1618a192fae/logo.svg"
+        "imageurl": "https://images.ctfassets.net/3dar4x4x74wk/cZZNUCdSENJnx4PZ6FLZs/7d534bbd01fc55c6392bc1618a192fae/logo.svg",
+        "imagealt": "Main Event Logo"
      },
      {
         "name": "Social Rose Texas",
@@ -38,7 +42,8 @@
         "email": "shop@socialrosetexas.com",
         "address": "1530 Keller Parkway, Suite B Keller, Texas 76248",
         "website": "https://www.socialrosetexas.com/",
-        "imageurl": "https://cdn.shoplightspeed.com/shops/608118/themes/572/assets/logo.png?20210729183628"
+        "imageurl": "https://cdn.shoplightspeed.com/shops/608118/themes/572/assets/logo.png?20210729183628",
+        "imagealt": "Social Rose Texas Logo"
      },
      {
         "name": "Victorian Tower House Event Venue",
@@ -46,7 +51,8 @@
         "email": "info@victoriantowerhouse.com",
         "address": "132 Olive St. Keller, TX 76248",
         "website": "https://www.victoriantowerhouse.com/",
-        "imageurl": "https://static.wixstatic.com/media/4cf83b_d582d6c39167445eb54e741b16baad37~mv2.png/v1/crop/x_0,y_62,w_818,h_590/fill/w_150,h_106,al_c,q_85,usm_0.66_1.00_0.01/VTH%20Logo%20Transparent.webp"
+        "imageurl": "https://static.wixstatic.com/media/4cf83b_d582d6c39167445eb54e741b16baad37~mv2.png/v1/crop/x_0,y_62,w_818,h_590/fill/w_150,h_106,al_c,q_85,usm_0.66_1.00_0.01/VTH%20Logo%20Transparent.webp",
+        "imagealt": "Victorian Tower House Event Venue Logo"
      },
      {
         "name": "Musgrave Family Medicine",
@@ -54,7 +60,8 @@
         "email": "musgravefamilymedicine@gmail.com",
         "address": "1750 Keller Pkwy, Keller , TX 76248",
         "website": "https://www.musgravefamilymedicine.com/",
-        "imageurl": "https://le-cdn.hibuwebsites.com/e76f9601d3f4447a9fdb8dcfa2eda7f2/dms3rep/multi/opt/Musgrave-2BFamily-2BMedicine-2BLogo-411w.jpg"
+        "imageurl": "https://le-cdn.hibuwebsites.com/e76f9601d3f4447a9fdb8dcfa2eda7f2/dms3rep/multi/opt/Musgrave-2BFamily-2BMedicine-2BLogo-411w.jpg",
+        "imagealt": "Musgrave Family Medicine Logo"
      }
  ]
 }

@@ -8,7 +8,44 @@ function myFunction() {
     }
   }
 
-//const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat="
+const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=32.9342&lon=97.2293&exclude=minutely,hourly&units=imperial&appid=e8d03de824b27f45a48404fccb7de49a"
+
+fetch(weatherURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      let currrentTemp = jsObject.current.temp.toFixed(0);
+      let condition = jsObject.current.weather[0].main;
+      let humidity = jsObject.current.humidity;
+
+      document.querySelector('#temp').innerText = currrentTemp;
+      document.querySelector('#condition').innerText = condition;
+      document.querySelector('#humidity').innerText = humidity;
+
+      let index = 1;
+      let dayName = "Day";
+
+      for(let i = 0; i < 3; i++) {
+        let date = new Date(jsObject.daily[i].dt * 1000)
+        let dayValue = date.getDay()
+        switch(dayValue) {
+          case 0: dayName = 'SUN'; break;
+          case 1: dayName = 'MON'; break;
+          case 2: dayName = 'TUE'; break;
+          case 3: dayName = 'WED'; break;
+          case 4: dayName = 'THU'; break;
+          case 5: dayName = 'FRI'; break;
+          case 6: dayName = 'SAT'; break;
+          default: dayName = 'Error';
+        }
+
+        let dayID = 'forecast-day-' + index;
+        document.getElementById(dayID).innerText = dayName;
+
+        let tempValue = jsObject.daily[i].temp.day.toFixed(0);
+        let tempID = 'forecast-temp-' + index;
+        document.getElementById(tempID).innerText = tempValue + '°F'
+      }
+    });
 
 
 //----------Directory JS-----------//
@@ -52,43 +89,14 @@ fetch(requestURL)
         image.setAttribute('src', directory[i].imageurl);
         card.appendChild(image);
 
+        image.setAttribute('alt', directory[i].imagealt);
+        card.appendChild(image);
+
         document.querySelector('div.direct-cards').appendChild(card);
   }
 })
   .catch(function(error){
    console.log('Fetch error: ', error.message);
-})
+});
 
-function copyrightYear() {
-  var todaysDate = new Date();
-  var currentYear = todaysDate.getFullYear();
-  document.getElementById("current-date").innerText =  currentYear; 
-};
 
-function currentDate() {
-  var todaysDate = new Date();
-  const longDayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  var dayName = longDayNames[todaysDate.getDay()];
-  const longMonthNames = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  var monthName = longMonthNames[todaysDate.getMonth()];
-  document.getElementById("current-date").innerHTML = dayName + " " + todaysDate.getDate() + " " + monthName + " " +todaysDate.getFullYear();
-
-}
-
-function lastSave() {
-const isoString = new Date(document.lastModified).toISOString();
-const options = {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-};
-console.log(isoString);
-const date = new Date(isoString);
-const upDate = new Intl.DateTimeFormat("en-UK", options).format(date);
-const lastMod = document.getElementById("lupdate");
-lastMod.innerText = `Last Updated: ${upDate}`;
-}
-
-window.onload = currentDate();
-window.onload = copyrightYear();
-window.onload = lastSave();
